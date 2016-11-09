@@ -17,10 +17,13 @@ public class MainActivity extends AppCompatActivity {
         mainBinding.greeting.setText("Glad to see you");
 
         User user = new User();
-        user.setName("Harry");
-        mainBinding.included.setUser(user);
-
         user.setName("Hermione");
+
+
+
+        mainBinding.setUser(user);
+
+        user.setName("Harry");
 
     }
 }

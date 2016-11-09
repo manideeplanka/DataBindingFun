@@ -3,6 +3,14 @@
 <layout xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
+
+        <variable
+            name="user"
+            type="com.rapidbizapps.databindingfun.User" />
+    </data>
+
+
     <android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
         android:layout_width="match_parent"
@@ -21,9 +29,10 @@
         <include
             android:id="@+id/included"
             layout="@layout/fun_text"
-            android:layout_below="@id/greeting"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_below="@id/greeting"
+            app:user="@{user}" />
 
     </android.support.percent.PercentRelativeLayout>
 </layout>
