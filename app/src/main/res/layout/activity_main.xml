@@ -34,5 +34,12 @@
             app:layout_widthPercent="50%" />
 
 
+        <include
+            android:id="@+id/included"
+            layout="@layout/fun_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button1" />
+
     </android.support.percent.PercentRelativeLayout>
 </layout>

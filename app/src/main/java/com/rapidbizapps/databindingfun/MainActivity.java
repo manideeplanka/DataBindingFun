@@ -18,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
         mainBinding.button1.setText("Click1");
         mainBinding.button2.setText("Click2");
 
+        mainBinding.included.funText.setText("Manideep");
+
 
 
     }
