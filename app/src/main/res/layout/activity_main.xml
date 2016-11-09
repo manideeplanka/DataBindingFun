@@ -17,29 +17,13 @@
             android:gravity="center"
             android:text="Good to see you!" />
 
-        <Button
-            android:id="@+id/button1"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/greeting"
-            android:text="Click1"
-            app:layout_widthPercent="50%" />
-
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/greeting"
-            android:layout_toEndOf="@id/button1"
-            android:text="Click 2"
-            app:layout_widthPercent="50%" />
-
 
         <include
             android:id="@+id/included"
             layout="@layout/fun_text"
+            android:layout_below="@id/greeting"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/button1" />
+            android:layout_height="wrap_content" />
 
     </android.support.percent.PercentRelativeLayout>
 </layout>

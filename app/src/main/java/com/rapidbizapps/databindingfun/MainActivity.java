@@ -15,12 +15,12 @@ public class MainActivity extends AppCompatActivity {
         ActivityMainBinding mainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
 
         mainBinding.greeting.setText("Glad to see you");
-        mainBinding.button1.setText("Click1");
-        mainBinding.button2.setText("Click2");
 
-        mainBinding.included.funText.setText("Manideep");
+        User user = new User();
+        user.setName("Harry");
+        mainBinding.included.setUser(user);
 
-
+        user.setName("Hermione");
 
     }
 }
