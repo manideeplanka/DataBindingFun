@@ -4,6 +4,10 @@
         <variable
             name="user"
             type="com.rapidbizapps.databindingfun.User" />
+
+        <import type="com.rapidbizapps.databindingfun.StringUtils"/>
+
+
     </data>
 
     <LinearLayout
@@ -15,7 +19,7 @@
             android:id="@+id/fun_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{com.rapidbizapps.databindingfun.StringUtils.capitalize(user.name)}" />
+            android:text="@{StringUtils.capitalize(user.name)}" />
 
     </LinearLayout>
 
